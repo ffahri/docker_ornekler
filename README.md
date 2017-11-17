@@ -7,3 +7,7 @@ Kayıt olmak için https://hub.docker.com adresindeki formu doldurmak yeterli ol
 # Sunum
 Anlatılan sunuya buradan ulaşabilirsiniz.
 
+# Docker kurulumu
+Hızlı bir şekilde linux üzerinde <br>
+$curl -sSL https://get.docker.com/ | sh
+<br> çalıştırılarak kurulabilir.
