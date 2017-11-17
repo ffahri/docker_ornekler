@@ -1,0 +1,17 @@
+docker network komutu ile bir ağ oluşturuyoruz.
+
+$docker network create gizliag
+
+daha sonra bu ağda çalışacak containerleri
+$docker run --network="gizliag" ...... 
+şeklinde tanımlıyoruz.
+
+eğer çalışma zamanında bir containeri bir networke bağlamak istiyorsak
+$docker connect NETWORK CONTAINERADI
+şeklinde gerçekleştiriyoruz.
+
+Örneğimizde
+ana ağda wordpress
+gizliağda mysql
+
+test - > ağa ekle -> kur
