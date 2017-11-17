@@ -1,0 +1,8 @@
+$docker run -d -p 81:80 --name wordpress wordpress
+
+Harici mysql sunucu ipsi girilir.
+
+Eğer mysql de docker içerisinde bulunacaksa
+
+$docker run -d --name mysqlsunucu mysql
+$docker run -d -p 81:80 --name wordpress --link mysqlsunucu:mysql wordpress
