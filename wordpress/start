@@ -4,5 +4,5 @@ Harici mysql sunucu ipsi girilir.
 
 Eğer mysql de docker içerisinde bulunacaksa
 
-$docker run -d --name mysqlsunucu mysql
+$docker run -d --name mysqlsunucu -e MYSQL_ROOT_PASSWORD=1234 mysql
 $docker run -d -p 81:80 --name wordpress --link mysqlsunucu:mysql wordpress
